@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microgrid Peak Shaver — BESS &amp; Solar Peak Shaving Simulator</title>
+    <meta name="description" content="Interactive BESS & Solar Microgrid Peak Shaving Simulator modeling 24-hour commercial load dispatch, PV generation, SOC bounds, and round-trip efficiency." />
+    <meta property="og:title" content="Microgrid Peak Shaver — BESS &amp; Solar Peak Shaving Simulator" />
+    <meta property="og:description" content="Interactive BESS & Solar Microgrid Peak Shaving Simulator modeling 24-hour commercial load dispatch, PV generation, SOC bounds, and round-trip efficiency." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('microgrid-theme');
+          var isDark = saved === 'dark';
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {
+          document.documentElement.classList.remove('dark');
+          document.documentElement.style.colorScheme = 'light';
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

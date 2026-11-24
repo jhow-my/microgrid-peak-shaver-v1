@@ -1,0 +1,8 @@
+{
+  "name": "Microgrid Peak Shaver V1.09 (to Github)",
+  "description": "Interactive BESS \u0026 Solar Microgrid Peak Shaving Simulator modeling 24-hour commercial load dispatch, PV generation, SOC bounds, and round-trip efficiency.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
