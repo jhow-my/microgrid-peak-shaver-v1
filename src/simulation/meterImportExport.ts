@@ -12,7 +12,7 @@ import {
 } from './bessEngine';
 
 export const DEFAULT_CRITICAL_DAYS_JSON_URL =
-  '/assets/aistudio/816701093-30min-peak-shaving_29fcbc07.json';
+  `${import.meta.env.BASE_URL}assets/aistudio/816701093-30min-peak-shaving_29fcbc07.json`;
 
 export interface ParsedMeterImport {
   metadata: MeterDatasetMetadata;
